@@ -251,11 +251,6 @@ export default function Home() {
 
                 {/* Products Grid */}
                 <div className="lg:col-span-3">
-                  {console.log('🚀 PASSING TO PRODUCTGRID:', {
-                    productsLength: filteredProducts.length,
-                    isLoadingState: isFilterLoading,
-                    productsArray: filteredProducts.slice(0, 2).map(p => p.name),
-                  })}
                   <ProductGrid
                     products={filteredProducts}
                     isLoading={isFilterLoading}
