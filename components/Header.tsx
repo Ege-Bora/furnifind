@@ -91,26 +91,27 @@ export default function Header() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <>
-            {/* Backdrop */}
+            {/* Backdrop - dark overlay for better contrast */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden"
+              className="fixed inset-0 bg-black/70 z-40 md:hidden"
               onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close menu"
             />
 
-            {/* Menu Drawer */}
+            {/* Menu Drawer - solid white background */}
             <motion.div
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ duration: 0.3, ease: 'easeInOut' }}
-              className="fixed right-0 top-0 bottom-0 w-full max-w-xs bg-white z-50 shadow-2xl md:hidden"
+              className="fixed right-0 top-0 bottom-0 w-full max-w-xs bg-white z-50 shadow-2xl md:hidden overflow-y-auto"
             >
               {/* Drawer Header */}
-              <div className="flex items-center justify-between p-6 border-b border-gray-200">
+              <div className="flex items-center justify-between p-6 border-b border-gray-200 bg-white">
                 <div className="flex items-center space-x-2">
                   <Logo size={32} />
                   <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
@@ -120,9 +121,10 @@ export default function Header() {
                 <motion.button
                   onClick={() => setIsMobileMenuOpen(false)}
                   whileTap={{ scale: 0.9 }}
-                  className="p-2 text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors"
+                  className="p-3 bg-gray-100 hover:bg-red-100 text-gray-700 hover:text-red-600 rounded-full transition-colors shadow-sm"
+                  aria-label="Close menu"
                 >
-                  <X className="h-6 w-6" />
+                  <X className="h-7 w-7" strokeWidth={2.5} />
                 </motion.button>
               </div>
 
