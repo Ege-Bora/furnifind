@@ -155,10 +155,10 @@ export const MAJOR_BRANDS: Brand[] = ALL_BRANDS.filter(b => b.category === 'majo
 export const SPECIALTY_BRANDS: Brand[] = ALL_BRANDS.filter(b => b.category === 'specialty');
 
 // Store names array for type definitions and filters
-export const STORE_NAMES = ALL_BRANDS.map(b => b.name) as const;
+export const STORE_NAMES = ALL_BRANDS.map(b => b.name);
 
 // Type for Store (derived from brand names)
-export type StoreName = typeof STORE_NAMES[number];
+export type StoreName = typeof ALL_BRANDS[number]['name'];
 
 // Helper function to get brand by name
 export function getBrandByName(name: string): Brand | undefined {
