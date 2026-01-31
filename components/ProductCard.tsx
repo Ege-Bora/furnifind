@@ -12,8 +12,6 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
-  console.log('🎴 ProductCard rendering:', product.name);
-
   const renderStars = (rating: number) => {
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 >= 0.5;
@@ -73,6 +71,10 @@ export default function ProductCard({ product }: ProductCardProps) {
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               loading="lazy"
               style={{ opacity: 1, visibility: 'visible', transform: 'none' }}
+              onError={(e) => {
+                // Fallback to placeholder if image fails to load
+                (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=600&fit=crop&auto=format';
+              }}
             />
           </div>
 

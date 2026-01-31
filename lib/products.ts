@@ -13,7 +13,7 @@ export const products: Product[] = [
     material: 'Fabric',
     rating: 4.7,
     reviewCount: 342,
-    imageUrl: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Scandinavian', 'Fabric', 'Gray']
   },
@@ -28,7 +28,7 @@ export const products: Product[] = [
     material: 'Velvet',
     rating: 4.8,
     reviewCount: 567,
-    imageUrl: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Velvet', 'Blue']
   },
@@ -43,7 +43,7 @@ export const products: Product[] = [
     material: 'Leather',
     rating: 4.6,
     reviewCount: 289,
-    imageUrl: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Mid-Century', 'Leather', 'Brown']
   },
@@ -58,7 +58,7 @@ export const products: Product[] = [
     material: 'Fabric',
     rating: 4.3,
     reviewCount: 178,
-    imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Industrial', 'Fabric', 'Beige']
   },
@@ -73,7 +73,7 @@ export const products: Product[] = [
     material: 'Fabric',
     rating: 4.5,
     reviewCount: 423,
-    imageUrl: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Fabric', 'Gray']
   },
@@ -88,7 +88,7 @@ export const products: Product[] = [
     material: 'Leather',
     rating: 4.9,
     reviewCount: 612,
-    imageUrl: 'https://images.unsplash.com/photo-1550254478-ead40cc54513?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1550254478-ead40cc54513?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Rustic', 'Leather', 'Brown']
   },
@@ -103,7 +103,7 @@ export const products: Product[] = [
     material: 'Fabric',
     rating: 4.4,
     reviewCount: 256,
-    imageUrl: 'https://images.unsplash.com/photo-1598300056393-4aac492f4344?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1598300056393-4aac492f4344?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Scandinavian', 'Fabric', 'White']
   },
@@ -118,7 +118,7 @@ export const products: Product[] = [
     material: 'Velvet',
     rating: 4.7,
     reviewCount: 334,
-    imageUrl: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Velvet', 'Blue']
   },
@@ -133,7 +133,7 @@ export const products: Product[] = [
     material: 'Metal',
     rating: 4.6,
     reviewCount: 201,
-    imageUrl: 'https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Industrial', 'Metal', 'Black']
   },
@@ -148,7 +148,7 @@ export const products: Product[] = [
     material: 'Velvet',
     rating: 4.5,
     reviewCount: 289,
-    imageUrl: 'https://images.unsplash.com/photo-1558211583-03ed8a0b2b37?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1558211583-03ed8a0b2b37?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Mid-Century', 'Velvet', 'Beige']
   },
@@ -165,7 +165,7 @@ export const products: Product[] = [
     material: 'Leather',
     rating: 4.8,
     reviewCount: 478,
-    imageUrl: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Mid-Century', 'Leather', 'Black']
   },
@@ -180,7 +180,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.5,
     reviewCount: 523,
-    imageUrl: 'https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Scandinavian', 'Wood', 'White']
   },
@@ -195,7 +195,7 @@ export const products: Product[] = [
     material: 'Velvet',
     rating: 4.6,
     reviewCount: 312,
-    imageUrl: 'https://images.unsplash.com/photo-1586158291800-2665f07bba79?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1586158291800-2665f07bba79?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Velvet', 'Blue']
   },
@@ -210,7 +210,7 @@ export const products: Product[] = [
     material: 'Metal',
     rating: 4.4,
     reviewCount: 267,
-    imageUrl: 'https://images.unsplash.com/photo-1503602642458-232111445657?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1503602642458-232111445657?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Industrial', 'Metal', 'Black']
   },
@@ -225,7 +225,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.7,
     reviewCount: 189,
-    imageUrl: 'https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1592078615290-033ee584e267?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Rustic', 'Wood', 'Brown']
   },
@@ -240,7 +240,7 @@ export const products: Product[] = [
     material: 'Fabric',
     rating: 4.3,
     reviewCount: 445,
-    imageUrl: 'https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Fabric', 'Gray']
   },
@@ -255,7 +255,7 @@ export const products: Product[] = [
     material: 'Fabric',
     rating: 4.6,
     reviewCount: 298,
-    imageUrl: 'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Mid-Century', 'Fabric', 'Beige']
   },
@@ -270,7 +270,7 @@ export const products: Product[] = [
     material: 'Leather',
     rating: 4.8,
     reviewCount: 367,
-    imageUrl: 'https://images.unsplash.com/photo-1567016546203-e73936294df9?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1567016546203-e73936294df9?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Scandinavian', 'Leather', 'Brown']
   },
@@ -285,7 +285,7 @@ export const products: Product[] = [
     material: 'Metal',
     rating: 4.2,
     reviewCount: 156,
-    imageUrl: 'https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Industrial', 'Metal', 'Black']
   },
@@ -300,7 +300,7 @@ export const products: Product[] = [
     material: 'Velvet',
     rating: 4.7,
     reviewCount: 423,
-    imageUrl: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Velvet', 'Gray']
   },
@@ -317,7 +317,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.7,
     reviewCount: 389,
-    imageUrl: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Mid-Century', 'Wood', 'Brown']
   },
@@ -332,7 +332,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.6,
     reviewCount: 512,
-    imageUrl: 'https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Scandinavian', 'Wood', 'Beige']
   },
@@ -347,7 +347,7 @@ export const products: Product[] = [
     material: 'Metal',
     rating: 4.5,
     reviewCount: 278,
-    imageUrl: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Industrial', 'Metal', 'Black']
   },
@@ -362,7 +362,7 @@ export const products: Product[] = [
     material: 'Metal',
     rating: 4.4,
     reviewCount: 234,
-    imageUrl: 'https://images.unsplash.com/photo-1551298370-9d3d53740c72?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1551298370-9d3d53740c72?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Metal', 'White']
   },
@@ -377,7 +377,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.8,
     reviewCount: 567,
-    imageUrl: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Rustic', 'Wood', 'Brown']
   },
@@ -392,7 +392,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.5,
     reviewCount: 412,
-    imageUrl: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Scandinavian', 'Wood', 'White']
   },
@@ -407,7 +407,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.7,
     reviewCount: 298,
-    imageUrl: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Mid-Century', 'Wood', 'White']
   },
@@ -422,7 +422,7 @@ export const products: Product[] = [
     material: 'Metal',
     rating: 4.3,
     reviewCount: 189,
-    imageUrl: 'https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Industrial', 'Metal', 'Brown']
   },
@@ -437,7 +437,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.6,
     reviewCount: 445,
-    imageUrl: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Wood', 'Gray']
   },
@@ -452,7 +452,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.9,
     reviewCount: 623,
-    imageUrl: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Rustic', 'Wood', 'Brown']
   },
@@ -469,7 +469,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.6,
     reviewCount: 534,
-    imageUrl: 'https://images.unsplash.com/photo-1595514535116-988f0b05c103?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1595514535116-988f0b05c103?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Wood', 'White']
   },
@@ -484,7 +484,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.7,
     reviewCount: 389,
-    imageUrl: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Mid-Century', 'Wood', 'Brown']
   },
@@ -499,7 +499,7 @@ export const products: Product[] = [
     material: 'Metal',
     rating: 4.5,
     reviewCount: 412,
-    imageUrl: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Industrial', 'Metal', 'Black']
   },
@@ -514,7 +514,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.4,
     reviewCount: 367,
-    imageUrl: 'https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Scandinavian', 'Wood', 'White']
   },
@@ -529,7 +529,7 @@ export const products: Product[] = [
     material: 'Metal',
     rating: 4.3,
     reviewCount: 298,
-    imageUrl: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Metal', 'Gray']
   },
@@ -544,7 +544,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.8,
     reviewCount: 489,
-    imageUrl: 'https://images.unsplash.com/photo-1595428773370-77e2c24cdf37?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1595428773370-77e2c24cdf37?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Rustic', 'Wood', 'Brown']
   },
@@ -559,7 +559,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.6,
     reviewCount: 345,
-    imageUrl: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Mid-Century', 'Wood', 'Beige']
   },
@@ -574,7 +574,7 @@ export const products: Product[] = [
     material: 'Metal',
     rating: 4.4,
     reviewCount: 267,
-    imageUrl: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Industrial', 'Metal', 'Black']
   },
@@ -589,7 +589,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.5,
     reviewCount: 523,
-    imageUrl: 'https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Wood', 'White']
   },
@@ -604,7 +604,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.7,
     reviewCount: 401,
-    imageUrl: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Scandinavian', 'Wood', 'Beige']
   },
@@ -621,7 +621,7 @@ export const products: Product[] = [
     material: 'Fabric',
     rating: 4.7,
     reviewCount: 612,
-    imageUrl: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Fabric', 'Gray']
   },
@@ -636,7 +636,7 @@ export const products: Product[] = [
     material: 'Fabric',
     rating: 4.8,
     reviewCount: 534,
-    imageUrl: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Mid-Century', 'Fabric', 'Beige']
   },
@@ -651,7 +651,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.5,
     reviewCount: 478,
-    imageUrl: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Scandinavian', 'Wood', 'White']
   },
@@ -666,7 +666,7 @@ export const products: Product[] = [
     material: 'Metal',
     rating: 4.4,
     reviewCount: 389,
-    imageUrl: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Industrial', 'Metal', 'Black']
   },
@@ -681,7 +681,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.9,
     reviewCount: 701,
-    imageUrl: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Rustic', 'Wood', 'Brown']
   },
@@ -696,7 +696,7 @@ export const products: Product[] = [
     material: 'Velvet',
     rating: 4.8,
     reviewCount: 589,
-    imageUrl: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Velvet', 'Blue']
   },
@@ -711,7 +711,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.6,
     reviewCount: 445,
-    imageUrl: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Scandinavian', 'Wood', 'Beige']
   },
@@ -726,7 +726,7 @@ export const products: Product[] = [
     material: 'Wood',
     rating: 4.7,
     reviewCount: 512,
-    imageUrl: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Mid-Century', 'Wood', 'Brown']
   },
@@ -741,7 +741,7 @@ export const products: Product[] = [
     material: 'Metal',
     rating: 4.5,
     reviewCount: 367,
-    imageUrl: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Industrial', 'Metal', 'Black']
   },
@@ -756,7 +756,7 @@ export const products: Product[] = [
     material: 'Leather',
     rating: 4.8,
     reviewCount: 634,
-    imageUrl: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?w=600&h=600&fit=crop&auto=format',
     productUrl: '#',
     tags: ['Modern', 'Leather', 'White']
   }
