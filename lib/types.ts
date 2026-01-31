@@ -2,7 +2,27 @@ export type ProductCategory = 'Sofa' | 'Chair' | 'Table' | 'Desk' | 'Bed';
 export type ProductStyle = 'Modern' | 'Scandinavian' | 'Industrial' | 'Rustic' | 'Mid-Century';
 export type ProductColor = 'Gray' | 'White' | 'Black' | 'Brown' | 'Blue' | 'Beige';
 export type ProductMaterial = 'Wood' | 'Metal' | 'Fabric' | 'Leather' | 'Velvet';
-export type Store = 'Wayfair' | 'IKEA' | 'Article' | 'West Elm' | 'Pottery Barn';
+
+// Store type - All affiliate partner brands (AWIN + CJ networks)
+// Major retailers
+export type Store =
+  // CJ Affiliate Network - Major
+  | 'Wayfair'
+  | 'Joss & Main'
+  | 'AllModern'
+  | 'Birch Lane'
+  // AWIN Network - Major
+  | 'Maisons du Monde'
+  | 'La Redoute'
+  | 'Etsy'
+  // AWIN Network - Specialty
+  | 'Hoffmann Germany'
+  | 'Meinewand'
+  | 'Seltmann Weiden'
+  | 'OTTO Office'
+  | 'Oxfam Online Shop'
+  | 'Busy B'
+  | 'Happy Lamps';
 
 export interface Product {
   id: string;

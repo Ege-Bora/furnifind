@@ -119,28 +119,47 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Building Our Retailer Network Section */}
+          {/* Our Affiliate Partners Section */}
           <section className="mb-12">
             <h2 className="text-2xl font-semibold text-gray-900 text-center mb-4">
-              Building Our Retailer Network
+              Our Affiliate Partners
             </h2>
             <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
-              We're actively establishing partnerships with leading furniture retailers to bring you the widest selection at competitive prices.
+              We partner with leading retailers across AWIN and CJ Affiliate networks, including Wayfair, Maisons du Monde, La Redoute, Etsy, and specialty furniture brands across Europe.
             </p>
 
-            {/* Coming Soon Placeholder Boxes */}
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <div
-                  key={i}
-                  className="border-2 border-dashed border-gray-300 rounded-lg p-8 flex items-center justify-center bg-gray-50 hover:border-purple-300 transition-colors"
-                >
-                  <p className="text-gray-400 font-medium text-sm">
-                    Coming Soon
-                  </p>
+            {/* Partner Networks */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
+              {/* CJ Affiliate Partners */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
+                <h3 className="text-lg font-semibold text-blue-800 mb-4">CJ Affiliate Network</h3>
+                <div className="space-y-2">
+                  {['Wayfair', 'Joss & Main', 'AllModern', 'Birch Lane'].map((brand) => (
+                    <div key={brand} className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full" />
+                      <span className="text-gray-700">{brand}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              {/* AWIN Partners */}
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-200">
+                <h3 className="text-lg font-semibold text-purple-800 mb-4">AWIN Network</h3>
+                <div className="space-y-2">
+                  {['Maisons du Monde', 'La Redoute', 'Etsy', 'Hoffmann Germany', 'OTTO Office', 'Happy Lamps'].map((brand) => (
+                    <div key={brand} className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-purple-500 rounded-full" />
+                      <span className="text-gray-700">{brand}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
+
+            <p className="text-center text-sm text-gray-500">
+              14 verified affiliate partners with active programs
+            </p>
           </section>
 
           {/* Disclosure Section */}

@@ -115,7 +115,7 @@ export default function CookiePolicyPage() {
                 Third-party services that may set cookies on our website include:
               </p>
               <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
-                <li><strong>Affiliate Networks:</strong> To track product clicks and purchases (e.g., Wayfair, IKEA, Article, West Elm, Pottery Barn)</li>
+                <li><strong>Affiliate Networks:</strong> To track product clicks and purchases via AWIN (Maisons du Monde, La Redoute, Etsy) and CJ Affiliate (Wayfair, Joss & Main, AllModern, Birch Lane)</li>
                 <li><strong>Analytics Providers:</strong> To analyze website traffic and user behavior (e.g., Google Analytics)</li>
                 <li><strong>Hosting Services:</strong> To provide website hosting and content delivery (e.g., Vercel)</li>
               </ul>

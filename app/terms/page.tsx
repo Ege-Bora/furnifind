@@ -45,7 +45,7 @@ export default function TermsPage() {
                   This site contains affiliate links to third-party retailers. We may earn a commission when you make a purchase through these links, at no additional cost to you.
                 </p>
                 <p className="text-gray-700">
-                  FurniFind is a participant in affiliate programs with various furniture retailers including Wayfair, IKEA, Article, West Elm, and Pottery Barn. When you click on product links and complete a purchase, we may receive compensation.
+                  FurniFind is a participant in affiliate programs via AWIN and CJ Affiliate networks, partnering with retailers including Wayfair, Maisons du Monde, La Redoute, Etsy, Joss & Main, AllModern, Birch Lane, and specialty European furniture brands. When you click on product links and complete a purchase, we may receive compensation.
                 </p>
               </div>
               <p className="text-gray-700 mb-4">

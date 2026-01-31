@@ -1,12 +1,13 @@
 # FurniFind - AI-Powered Furniture Discovery Platform
 
-> Discover furniture with AI-powered visual search. Upload any furniture image and find similar products from top stores.
+> Discover furniture with AI-powered visual search. Upload any furniture image and find similar products from Wayfair, Maisons du Monde, La Redoute, and 50+ European retailers.
 
 ## Features
 
 - **AI Visual Search**: Upload any furniture image and get AI-powered product recommendations
-- **Smart Filtering**: Filter by category, price range, and store
-- **50+ Products**: Curated furniture from Wayfair, IKEA, Article, West Elm, and Pottery Barn
+- **Smart Filtering**: Filter by category, price range, and retailer
+- **14 Affiliate Partners**: Wayfair, Maisons du Monde, La Redoute, Etsy, Joss & Main, AllModern, Birch Lane, and specialty European brands
+- **AWIN + CJ Networks**: Real affiliate partnerships with verified programs
 - **Modern UI**: Beautiful, responsive design with Tailwind CSS and shadcn/ui
 - **Production-Ready**: Built with Next.js 14, TypeScript, and modern best practices
 

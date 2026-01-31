@@ -18,7 +18,30 @@ interface FilterBarProps {
 }
 
 const categories: (ProductCategory | 'All')[] = ['All', 'Sofa', 'Chair', 'Table', 'Desk', 'Bed'];
-const stores: Store[] = ['Wayfair', 'IKEA', 'Article', 'West Elm', 'Pottery Barn'];
+
+// Grouped stores for better UX
+const majorRetailers: Store[] = [
+  'Wayfair',
+  'Maisons du Monde',
+  'La Redoute',
+  'Etsy',
+  'Joss & Main',
+  'AllModern',
+  'Birch Lane',
+];
+
+const specialtyBrands: Store[] = [
+  'Hoffmann Germany',
+  'Meinewand',
+  'Seltmann Weiden',
+  'OTTO Office',
+  'Oxfam Online Shop',
+  'Busy B',
+  'Happy Lamps',
+];
+
+// Combined stores array for backward compatibility
+const stores: Store[] = [...majorRetailers, ...specialtyBrands];
 
 export default function FilterBar({ filters, onFiltersChange }: FilterBarProps) {
   const priceDebounceTimer = useRef<NodeJS.Timeout | null>(null);
@@ -135,25 +158,58 @@ export default function FilterBar({ filters, onFiltersChange }: FilterBarProps) 
         {/* Store Filter */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-3">
-            Stores
+            Retailers
           </label>
-          <div className="space-y-2">
-            {stores.map((store) => (
-              <label
-                key={store}
-                className="flex items-center space-x-3 cursor-pointer group"
-              >
-                <input
-                  type="checkbox"
-                  checked={filters.stores.includes(store)}
-                  onChange={() => handleStoreToggle(store)}
-                  className="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
-                />
-                <span className="text-sm text-gray-700 group-hover:text-gray-900">
-                  {store}
-                </span>
-              </label>
-            ))}
+          <div className="max-h-80 overflow-y-auto pr-2 space-y-4">
+            {/* Major Retailers */}
+            <div>
+              <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-2">
+                Major Retailers
+              </p>
+              <div className="space-y-2">
+                {majorRetailers.map((store) => (
+                  <label
+                    key={store}
+                    className="flex items-center space-x-3 cursor-pointer group"
+                  >
+                    <input
+                      type="checkbox"
+                      checked={filters.stores.includes(store)}
+                      onChange={() => handleStoreToggle(store)}
+                      className="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
+                    />
+                    <span className="text-sm text-gray-700 group-hover:text-gray-900">
+                      {store}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            {/* Specialty Brands */}
+            <div>
+              <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">
+                Specialty Brands
+              </p>
+              <div className="space-y-2">
+                {specialtyBrands.map((store) => (
+                  <label
+                    key={store}
+                    className="flex items-center space-x-3 cursor-pointer group"
+                  >
+                    <input
+                      type="checkbox"
+                      checked={filters.stores.includes(store)}
+                      onChange={() => handleStoreToggle(store)}
+                      className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                    />
+                    <span className="text-sm text-gray-700 group-hover:text-gray-900">
+                      {store}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
