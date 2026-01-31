@@ -166,19 +166,19 @@ export default function FilterBar({ filters, onFiltersChange }: FilterBarProps) 
               <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-2">
                 Major Retailers
               </p>
-              <div className="space-y-2">
+              <div className="space-y-1">
                 {majorRetailers.map((store) => (
                   <label
                     key={store}
-                    className="flex items-center space-x-3 cursor-pointer group"
+                    className="flex items-center gap-3 py-2 px-2 cursor-pointer rounded-md hover:bg-purple-50 transition-colors select-none"
                   >
                     <input
                       type="checkbox"
                       checked={filters.stores.includes(store)}
                       onChange={() => handleStoreToggle(store)}
-                      className="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
+                      className="w-[18px] h-[18px] min-w-[18px] min-h-[18px] text-purple-600 border-gray-300 rounded focus:ring-purple-500 cursor-pointer"
                     />
-                    <span className="text-sm text-gray-700 group-hover:text-gray-900">
+                    <span className="text-sm text-gray-700 flex-1">
                       {store}
                     </span>
                   </label>
@@ -191,19 +191,19 @@ export default function FilterBar({ filters, onFiltersChange }: FilterBarProps) 
               <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">
                 Specialty Brands
               </p>
-              <div className="space-y-2">
+              <div className="space-y-1">
                 {specialtyBrands.map((store) => (
                   <label
                     key={store}
-                    className="flex items-center space-x-3 cursor-pointer group"
+                    className="flex items-center gap-3 py-2 px-2 cursor-pointer rounded-md hover:bg-blue-50 transition-colors select-none"
                   >
                     <input
                       type="checkbox"
                       checked={filters.stores.includes(store)}
                       onChange={() => handleStoreToggle(store)}
-                      className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                      className="w-[18px] h-[18px] min-w-[18px] min-h-[18px] text-blue-600 border-gray-300 rounded focus:ring-blue-500 cursor-pointer"
                     />
-                    <span className="text-sm text-gray-700 group-hover:text-gray-900">
+                    <span className="text-sm text-gray-700 flex-1">
                       {store}
                     </span>
                   </label>
