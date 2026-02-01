@@ -140,7 +140,7 @@ export default function Hero({ onGetStarted }: HeroProps) {
           </div>
           <div className="flex items-center space-x-2">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span>14 Partner Retailers</span>
+            <span className="blur-[2px] select-none">14 Partner Retailers</span>
           </div>
           <div className="flex items-center space-x-2">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
