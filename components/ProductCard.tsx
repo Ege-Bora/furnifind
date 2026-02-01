@@ -53,7 +53,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           <div className="absolute top-3 right-3 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm border-0 shadow-md">
               <Store className="w-3 h-3 mr-1" />
-              {product.store}
+              Premium Retailer
             </Badge>
           </div>
 
@@ -130,7 +130,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               </div>
               <div className="text-right">
                 <p className="text-xs text-gray-600 mb-0.5">Available at</p>
-                <p className="text-sm font-semibold text-gray-800 truncate max-w-[100px]">{product.store}</p>
+                <p className="text-sm font-semibold text-gray-800">Premium Retailer</p>
               </div>
             </div>
 
