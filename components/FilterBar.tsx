@@ -1,7 +1,7 @@
 'use client';
 
-import { useRef, useCallback } from 'react';
-import { FilterOptions, ProductCategory, Store } from '@/lib/types';
+import { useState, useRef, useCallback } from 'react';
+import { FilterOptions, ProductCategory } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import {
@@ -11,6 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 interface FilterBarProps {
   filters: FilterOptions;
@@ -19,31 +20,16 @@ interface FilterBarProps {
 
 const categories: (ProductCategory | 'All')[] = ['All', 'Sofa', 'Chair', 'Table', 'Desk', 'Bed'];
 
-// Grouped stores for better UX
-const majorRetailers: Store[] = [
-  'Wayfair',
-  'Maisons du Monde',
-  'La Redoute',
-  'Etsy',
-  'Joss & Main',
-  'AllModern',
-  'Birch Lane',
-];
+// Generate 19 placeholder retail partners
+const placeholderPartners = Array.from({ length: 19 }, (_, i) => ({
+  id: `partner-${i + 1}`,
+  name: `New Partner ${i + 1}`,
+}));
 
-const specialtyBrands: Store[] = [
-  'Hoffmann Germany',
-  'Meinewand',
-  'Seltmann Weiden',
-  'OTTO Office',
-  'Oxfam Online Shop',
-  'Busy B',
-  'Happy Lamps',
-];
-
-// Combined stores array for backward compatibility
-const stores: Store[] = [...majorRetailers, ...specialtyBrands];
+const INITIAL_DISPLAY_COUNT = 6;
 
 export default function FilterBar({ filters, onFiltersChange }: FilterBarProps) {
+  const [showAllPartners, setShowAllPartners] = useState(false);
   const priceDebounceTimer = useRef<NodeJS.Timeout | null>(null);
   const filtersRef = useRef(filters);
 
@@ -73,17 +59,6 @@ export default function FilterBar({ filters, onFiltersChange }: FilterBarProps) 
     }, 300);
   }, [onFiltersChange]);
 
-  const handleStoreToggle = (store: Store) => {
-    const newStores = filters.stores.includes(store)
-      ? filters.stores.filter(s => s !== store)
-      : [...filters.stores, store];
-
-    onFiltersChange({
-      ...filters,
-      stores: newStores,
-    });
-  };
-
   const handleClearFilters = () => {
     onFiltersChange({
       category: 'All',
@@ -95,8 +70,11 @@ export default function FilterBar({ filters, onFiltersChange }: FilterBarProps) 
   const hasActiveFilters =
     filters.category !== 'All' ||
     filters.priceRange[0] !== 0 ||
-    filters.priceRange[1] !== 3000 ||
-    filters.stores.length > 0;
+    filters.priceRange[1] !== 3000;
+
+  const displayedPartners = showAllPartners
+    ? placeholderPartners
+    : placeholderPartners.slice(0, INITIAL_DISPLAY_COUNT);
 
   return (
     <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
@@ -114,7 +92,7 @@ export default function FilterBar({ filters, onFiltersChange }: FilterBarProps) 
         )}
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-6">
         {/* Category Filter */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-3">
@@ -155,62 +133,53 @@ export default function FilterBar({ filters, onFiltersChange }: FilterBarProps) 
           </div>
         </div>
 
-        {/* Store Filter */}
+        {/* Retailers Filter - Placeholder Partners */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-3">
             Retailers
           </label>
-          <div className="max-h-80 overflow-y-auto pr-2 space-y-4">
-            {/* Major Retailers */}
-            <div>
-              <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-2">
-                Major Retailers
-              </p>
-              <div className="space-y-1">
-                {majorRetailers.map((store) => (
-                  <label
-                    key={store}
-                    className="flex items-center gap-3 py-2 px-2 cursor-pointer rounded-md hover:bg-purple-50 transition-colors select-none"
-                  >
-                    <input
-                      type="checkbox"
-                      checked={filters.stores.includes(store)}
-                      onChange={() => handleStoreToggle(store)}
-                      className="w-[18px] h-[18px] min-w-[18px] min-h-[18px] text-purple-600 border-gray-300 rounded focus:ring-purple-500 cursor-pointer"
-                    />
-                    <span className="text-sm text-gray-700 flex-1">
-                      {store}
-                    </span>
-                  </label>
-                ))}
-              </div>
-            </div>
 
-            {/* Specialty Brands */}
-            <div>
-              <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">
-                Specialty Brands
-              </p>
-              <div className="space-y-1">
-                {specialtyBrands.map((store) => (
-                  <label
-                    key={store}
-                    className="flex items-center gap-3 py-2 px-2 cursor-pointer rounded-md hover:bg-blue-50 transition-colors select-none"
-                  >
-                    <input
-                      type="checkbox"
-                      checked={filters.stores.includes(store)}
-                      onChange={() => handleStoreToggle(store)}
-                      className="w-[18px] h-[18px] min-w-[18px] min-h-[18px] text-blue-600 border-gray-300 rounded focus:ring-blue-500 cursor-pointer"
-                    />
-                    <span className="text-sm text-gray-700 flex-1">
-                      {store}
-                    </span>
-                  </label>
-                ))}
+          <div
+            className={`space-y-1 pr-1 ${
+              showAllPartners ? 'max-h-[300px] overflow-y-auto' : ''
+            }`}
+          >
+            {displayedPartners.map((partner) => (
+              <div
+                key={partner.id}
+                className="flex items-center gap-3 py-2 px-2 rounded-md cursor-not-allowed"
+              >
+                <input
+                  type="checkbox"
+                  disabled
+                  className="w-[18px] h-[18px] min-w-[18px] min-h-[18px] border-gray-300 rounded opacity-40 cursor-not-allowed"
+                />
+                <span className="text-sm text-gray-400 flex-1">
+                  {partner.name} <span className="text-gray-300">- Launching Soon</span>
+                </span>
               </div>
-            </div>
+            ))}
           </div>
+
+          {/* Show More/Less Button */}
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setShowAllPartners(!showAllPartners)}
+            className="w-full mt-3 text-purple-600 hover:text-purple-700 hover:bg-purple-50"
+          >
+            {showAllPartners ? (
+              <>
+                <ChevronUp className="w-4 h-4 mr-1" />
+                Show less
+              </>
+            ) : (
+              <>
+                <ChevronDown className="w-4 h-4 mr-1" />
+                Show all {placeholderPartners.length} partners...
+              </>
+            )}
+          </Button>
         </div>
       </div>
     </div>
